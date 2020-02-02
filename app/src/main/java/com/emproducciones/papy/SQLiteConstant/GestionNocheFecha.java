@@ -1,0 +1,33 @@
+package com.emproducciones.papy.SQLiteConstant;
+
+public class GestionNocheFecha {
+
+    //NOMBRE DE TABLA
+    public final static String NOMBRE_TABLA_GESTION_NOCHE_FECHA = "fecha";
+
+    //COLUMNAS TABLA
+    public final static String COLUMN_ID_GESTION_NOCHE_FECHA = "idNocheFecha";
+    public final static String COLUMN_FECHA_GESTION_NOCHE_FECHA="fecha";
+    public final static String COLUMN_NRO_NOCHE_GESTION_NOCHE_FECHA="numeronoche";
+    public final static String COLUMN_ESTADO_NOCHE_GESTION_NOCHE_FECHA="estado";
+
+    //CREAR TABLA
+    public final static String CREAR_TABLA_GESTION_NOCHE="CREATE TABLE "+  NOMBRE_TABLA_GESTION_NOCHE_FECHA +"( " +
+            COLUMN_ID_GESTION_NOCHE_FECHA + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_FECHA_GESTION_NOCHE_FECHA + " DATE NOT NULL, "+
+            COLUMN_NRO_NOCHE_GESTION_NOCHE_FECHA + " INTEGER NOT NULL, "+
+            COLUMN_ESTADO_NOCHE_GESTION_NOCHE_FECHA + " INTEGER NOT NULL " + ");";
+
+    //QUERIS
+    public final static String[] COLUMNAS_CONSULTA_GESTION_NOCHE = new String[]{COLUMN_ID_GESTION_NOCHE_FECHA,COLUMN_FECHA_GESTION_NOCHE_FECHA,
+            COLUMN_NRO_NOCHE_GESTION_NOCHE_FECHA,COLUMN_ESTADO_NOCHE_GESTION_NOCHE_FECHA};
+
+    public final static String CLAUSULA_WHERE_MAYOR = COLUMN_ID_GESTION_NOCHE_FECHA + "=(SELECT MAX("+COLUMN_ID_GESTION_NOCHE_FECHA
+            +")FROM "+NOMBRE_TABLA_GESTION_NOCHE_FECHA+")";
+
+    public static final  String WHERE_CLAUSE_FECHA_FALSE  = COLUMN_ID_GESTION_NOCHE_FECHA+"=?";
+
+    //DROP TABLE
+    public final static String ELIMINAR_TABLA_GESTION_NOCHE = "DROP TABLE " + NOMBRE_TABLA_GESTION_NOCHE_FECHA;
+
+}

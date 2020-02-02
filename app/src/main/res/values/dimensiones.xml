@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="anchoBtn">673dp</dimen>
+    <dimen name="altoBtn">98dp</dimen>
+    <dimen name="tamanoTextoBtn">60sp</dimen>
+    <dimen name="tamanoTextoBtnChico">20sp</dimen>
+    <dimen name="tamanoTextoGrandes">85sp</dimen>
+    <dimen name="tamanoTextoBotoneraSeleccion">45sp</dimen>
+</resources>

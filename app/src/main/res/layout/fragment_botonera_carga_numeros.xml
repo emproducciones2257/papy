@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".botoneraCargaNumerosFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <TextView
+            android:id="@+id/txtTituloNumero"
+            style="@style/estiloTitulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUMEROS"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/tamanoTextoBtn"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelineBottom"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/edtN1"
+            android:layout_width="85dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="N° 1"
+            android:textColor="@color/primaryColor"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintEnd_toStartOf="@+id/edtN2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/edtN2"
+            android:layout_width="88dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="N° 2"
+            android:textColor="@color/primaryColor"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintEnd_toStartOf="@+id/edtN3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edtN1"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/edtN3"
+            android:layout_width="88dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:gravity="center"
+            android:text="N° 3"
+            android:textColor="@color/primaryColor"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintStart_toEndOf="@+id/edtN2"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:columnCount="5"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelineBottom"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+            app:rowCount="5">
+
+            <Button
+                android:id="@+id/btn00"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="00" />
+
+            <Button
+                android:id="@+id/btn01"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="01" />
+
+            <Button
+                android:id="@+id/btn02"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="02" />
+
+            <Button
+                android:id="@+id/btn03"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="03" />
+
+            <Button
+                android:id="@+id/btn04"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="04" />
+
+            <Button
+                android:id="@+id/btn05"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="05" />
+
+            <Button
+                android:id="@+id/btn06"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="06" />
+
+            <Button
+                android:id="@+id/btn07"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="07" />
+
+            <Button
+                android:id="@+id/btn08"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="08" />
+
+            <Button
+                android:id="@+id/btn09"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="09" />
+
+            <Button
+                android:id="@+id/btn10"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/btn11"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="11" />
+
+            <Button
+                android:id="@+id/btn12"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="12" />
+
+            <Button
+                android:id="@+id/btn13"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="13" />
+
+            <Button
+                android:id="@+id/btn14"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="14" />
+
+            <Button
+                android:id="@+id/btn15"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/btn16"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="16" />
+
+            <Button
+                android:id="@+id/btn17"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="17" />
+
+            <Button
+                android:id="@+id/btn18"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="18" />
+
+            <Button
+                android:id="@+id/btn19"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="19" />
+
+            <Button
+                android:id="@+id/btn20"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="20" />
+
+            <Button
+                android:id="@+id/btn21"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="21" />
+
+            <Button
+                android:id="@+id/btn22"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="22" />
+
+            <Button
+                android:id="@+id/btn23"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="23" />
+
+            <Button
+                android:id="@+id/btn24"
+                style="@style/estiloBotonBotoneraSeleccion"
+                android:text="24" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38666666" />
+
+        <ImageButton
+            android:id="@+id/btnBorrarNumeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_light_background"
+            android:src="@drawable/undelete_480px"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toEndOf="@+id/edtN3"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:layout_constraintVertical_bias="0.615" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="480dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

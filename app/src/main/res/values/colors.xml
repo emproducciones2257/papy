@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="primaryLightColor">#80e27e</color>
+    <color name="primaryDarkColor">#087f23</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secundaryTextColor">#ffffff</color>
+
+
+    <color name="verdeIngles">#004225</color>
+    <color name="verdeClaro">#0BAF68</color>
+
+    <color name="rojoError">#F44336</color>
+
+</resources>
+
+
+
